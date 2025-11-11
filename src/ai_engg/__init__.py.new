@@ -1,0 +1,8 @@
+from flask import Flask
+from .app import create_app
+
+# Initialize the Flask application and assistant
+app, assistant = create_app()
+
+# Export the app and assistant for use in other modules
+__all__ = ['app', 'assistant']
